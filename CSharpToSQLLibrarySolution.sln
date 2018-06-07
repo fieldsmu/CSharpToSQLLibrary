@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpToSQLLibrary", "CSharpToSQLLibrary\CSharpToSQLLibrary.csproj", "{D1DE7EF7-CCB0-418D-A064-B3DC46A80CF0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLLibrary", "SQLLibrary\SQLLibrary.csproj", "{D176B6F7-E055-4E4B-AB33-513302DA915E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D1DE7EF7-CCB0-418D-A064-B3DC46A80CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1DE7EF7-CCB0-418D-A064-B3DC46A80CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1DE7EF7-CCB0-418D-A064-B3DC46A80CF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D176B6F7-E055-4E4B-AB33-513302DA915E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D176B6F7-E055-4E4B-AB33-513302DA915E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D176B6F7-E055-4E4B-AB33-513302DA915E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D176B6F7-E055-4E4B-AB33-513302DA915E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
