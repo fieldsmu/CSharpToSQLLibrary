@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace SQLLibrary {
 	public class User {
@@ -17,6 +18,18 @@ namespace SQLLibrary {
 		public bool IsReviewer { get; set; }
 		public bool IsAdmin { get; set; }
 		public bool Active { get; set; }
+
+		public User(SqlDataReader reader) {
+			Id = reader.GetInt32(reader.GetOrdinal("Id"));
+			Username = reader.GetString(reader.GetOrdinal("Username"));
+			Password = reader.GetString(reader.GetOrdinal("Password"));
+			Firstname = reader.GetString(reader.GetOrdinal("Firstname"));
+			Lastname = reader.GetString(reader.GetOrdinal("Lastname"));
+			Phone = reader.GetString(reader.GetOrdinal("Phone"));
+			Email = reader.GetString(reader.GetOrdinal("Email"));
+			IsReviewer = reader.GetBoolean(reader.GetOrdinal("IsReviewer"));
+			IsAdmin = reader.GetBoolean(reader.GetOrdinal("IsAdmin"));
+		}
 
 		public User() {
 
